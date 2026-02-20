@@ -36,8 +36,9 @@ namespace CentralTestTPL
                 MessageBox.Show("TPL is already running.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Application.Exit();
                 return;
+            }else{
+                txtMachine.Focus();
             }
-            txtMachine.Focus();
         }
 
         private void txtMachine_KeyPress(object sender, KeyPressEventArgs e)
@@ -45,20 +46,29 @@ namespace CentralTestTPL
             if (e.KeyChar != (char)Keys.Enter) return;
             if (string.IsNullOrWhiteSpace(txtMachine.Text))
             {
-                ShowError("Invalid Machine.\nPlease Scan again.");
+                ShowError("Invalid Tester.\nPlease Scan again.");
                 return;
             }
             else
             {
                 var list = new DataAccess().selectMachine(txtMachine.Text);
-                if(list.Count > 0)
+
+                if (!Directory.Exists(CentralTest.EngDatalogPath))
                 {
+                    ShowError("Correlation/Binning Folder Not Exist.\nPlease Contact Engineer.");
+                    txtMachine.Clear();
+                    return;
+                } else if (list.Count > 0) {
+                    if (!Directory.Exists(CentralTest.EngDatalogPath+"\\Archived")) {
+                        Directory.CreateDirectory(CentralTest.EngDatalogPath + "\\Archived");
+                    }
                     txtMachine.Enabled = false;
-                    txtUsername.Focus();
+                    txtHandler.Enabled = true;
+                    txtHandler.Focus();
                 }
                 else
                 {
-                    ShowError("Machine not found in Database.\nPlease Scan again.");
+                    ShowError("Tester not found in Database.\nPlease Scan again.");
                     txtMachine.Clear();
                 }
             }
@@ -87,6 +97,30 @@ namespace CentralTestTPL
                 }
             }
 
+        }
+
+        private void txtHandler_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)Keys.Enter) return;
+            if (string.IsNullOrWhiteSpace(txtHandler.Text))
+            {
+                ShowError("Invalid Handler.\nPlease Scan again.");
+                return;
+            }
+            else
+            {
+                if(txtHandler.Text != CentralTest.Handler)
+                {
+                    ShowError("Invalid Handler.\nPlease Scan again.");
+                    txtHandler.Clear();
+                }
+                else
+                {
+                    txtHandler.Enabled = false;
+                    txtUsername.Enabled = true;
+                    txtUsername.Focus();
+                }
+            }
         }
     }
 }

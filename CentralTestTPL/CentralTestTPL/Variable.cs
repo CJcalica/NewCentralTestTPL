@@ -13,6 +13,7 @@ namespace CentralTestTPL
     public class User
     {
         public static string Emp_No { get; set; }
+        public static string CustomerCodes { get; set; }
     }
 
     public class FTPInfo
@@ -56,27 +57,26 @@ namespace CentralTestTPL
 
     public class LotInfo
     {
-        public static string LotAlias { get; set; }
         public static string LotNumber { get; set; }
         public static Int64 LotCode { get; set; }
         public static Int64 CustomerCode { get; set; }
         public static string PkgLD { get; set; }
+        public static string LdType { get; set; }
         public static string ProductID { get; set; }
         public static string Device { get; set; }
         public static Int64 ProductCode { get; set; }
-        public static string ETSTesterProgramNameFT { get; set; }
-        public static string ETSTesterProgramNameQA { get; set; }
         public static Int64 SubLotQty { get; set; }
         public static Int64 RecipeCode { get; set; }
         public static string StageID { get; set; }
-        public static string SubLotNum { get; set; }
+        public static string FinalTestProgram { get; set; }
+        public static string QATestProgram { get; set; }
+        public static string LBoard { get; set; }
+        public static string Hibs { get; set; }
+        public static string TPLCable { get; set; }
+        public static string CoverTape { get; set; }
+        public static string CarrierTape { get; set; }
+        public static string Reel { get; set; }
         public static string msg { get; set; }
-        public static string LB { get; set; }
-        public static string DUT { get; set; }
-        public static Int64 LBQty { get; set; }
-        public static Int64 DUTQty { get; set; }
-        public static string LBHardware { get; set; }
-        public static string DUTHardware { get; set; }
     }
 
     public class Global
@@ -129,6 +129,8 @@ namespace CentralTestTPL
         public static string Source5 { get; set; }
         public static string Username { get; set; }
         public static string Password { get; set; }
+        public static string Handler { get; set; }
+        public static string EngDatalogPath { get; set; }
     }
 
 }

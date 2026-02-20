@@ -65,20 +65,17 @@ namespace CentralTestTPL
 
         public List<LotInfo> SelectLotInfo(string LotNo)
         {
-            Sqlhandler.SetToMesAtec();
+            Sqlhandler.SetToEMMS1();
             List<LotInfo> lotInfo = new List<LotInfo>();
             try
             {
                 var suffix = LotNo.Substring(LotNo.LastIndexOf('-'));
 
-                String sqltext = "[usp_WebMES_RecipeLoader_Get_Lot_Details]";//sp name
+                String sqltext = "[usp_CentralTest_TPL_Get_Lot_Details]";//sp name
                 Sqlhandler.CreateParameter(2);
                 Sqlhandler.SetParameterValues(0, "@Lot", SqlDbType.NVarChar, LotNo);
-                Sqlhandler.SetParameterValues(1, "@StageCode", SqlDbType.NVarChar, 23);
-
-
+                Sqlhandler.SetParameterValues(1, "@Machine", SqlDbType.NVarChar, CentralTest.MachineName);
                 DataTable dt = new DataTable();
-
                 if (Sqlhandler.OpenConnection())
                 {
                     if (Sqlhandler.FillDataTable(sqltext, ref dt, CommandType.StoredProcedure))

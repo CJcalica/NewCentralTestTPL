@@ -28,28 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtDetailLead = new System.Windows.Forms.TextBox();
+            this.txtDetailPkg = new System.Windows.Forms.TextBox();
+            this.txtDetailProduct = new System.Windows.Forms.TextBox();
+            this.txtDetailDevice = new System.Windows.Forms.TextBox();
+            this.txtDetailQty = new System.Windows.Forms.TextBox();
+            this.txtDetailLotnumber = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtLotnumber = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtTestProgram = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnLaunch = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbTestProg = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtCable = new System.Windows.Forms.TextBox();
+            this.txtHIBs = new System.Windows.Forms.TextBox();
+            this.txtLBoard = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtReelLot = new System.Windows.Forms.TextBox();
+            this.txtCoverLot = new System.Windows.Forms.TextBox();
+            this.txtCarrierLot = new System.Windows.Forms.TextBox();
+            this.txtReelID = new System.Windows.Forms.TextBox();
+            this.txtCoverID = new System.Windows.Forms.TextBox();
+            this.txtCarrierID = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtDetailLead);
+            this.groupBox1.Controls.Add(this.txtDetailPkg);
+            this.groupBox1.Controls.Add(this.txtDetailProduct);
+            this.groupBox1.Controls.Add(this.txtDetailDevice);
+            this.groupBox1.Controls.Add(this.txtDetailQty);
+            this.groupBox1.Controls.Add(this.txtDetailLotnumber);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Enabled = false;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(677, 296);
+            this.groupBox1.Size = new System.Drawing.Size(800, 399);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lot Details";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(16, 336);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(71, 29);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Lead";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(16, 281);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 29);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Package";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(16, 225);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 29);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Product";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(16, 169);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 29);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Device";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(14, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 29);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Lot Quantity";
+            // 
+            // txtDetailLead
+            // 
+            this.txtDetailLead.BackColor = System.Drawing.SystemColors.Window;
+            this.txtDetailLead.Enabled = false;
+            this.txtDetailLead.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailLead.Location = new System.Drawing.Point(249, 326);
+            this.txtDetailLead.Name = "txtDetailLead";
+            this.txtDetailLead.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailLead.TabIndex = 10;
+            // 
+            // txtDetailPkg
+            // 
+            this.txtDetailPkg.Enabled = false;
+            this.txtDetailPkg.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailPkg.Location = new System.Drawing.Point(249, 271);
+            this.txtDetailPkg.Name = "txtDetailPkg";
+            this.txtDetailPkg.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailPkg.TabIndex = 9;
+            // 
+            // txtDetailProduct
+            // 
+            this.txtDetailProduct.Enabled = false;
+            this.txtDetailProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailProduct.Location = new System.Drawing.Point(249, 215);
+            this.txtDetailProduct.Name = "txtDetailProduct";
+            this.txtDetailProduct.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailProduct.TabIndex = 8;
+            // 
+            // txtDetailDevice
+            // 
+            this.txtDetailDevice.Enabled = false;
+            this.txtDetailDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailDevice.Location = new System.Drawing.Point(249, 159);
+            this.txtDetailDevice.Name = "txtDetailDevice";
+            this.txtDetailDevice.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailDevice.TabIndex = 7;
+            // 
+            // txtDetailQty
+            // 
+            this.txtDetailQty.Enabled = false;
+            this.txtDetailQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailQty.Location = new System.Drawing.Point(249, 103);
+            this.txtDetailQty.Name = "txtDetailQty";
+            this.txtDetailQty.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailQty.TabIndex = 6;
+            // 
+            // txtDetailLotnumber
+            // 
+            this.txtDetailLotnumber.Enabled = false;
+            this.txtDetailLotnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtDetailLotnumber.Location = new System.Drawing.Point(249, 46);
+            this.txtDetailLotnumber.Name = "txtDetailLotnumber";
+            this.txtDetailLotnumber.Size = new System.Drawing.Size(518, 39);
+            this.txtDetailLotnumber.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(16, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 29);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Lot Number";
+            // 
             // txtLotnumber
             // 
             this.txtLotnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtLotnumber.Location = new System.Drawing.Point(285, 28);
+            this.txtLotnumber.Location = new System.Drawing.Point(298, 28);
             this.txtLotnumber.Name = "txtLotnumber";
-            this.txtLotnumber.Size = new System.Drawing.Size(404, 39);
-            this.txtLotnumber.TabIndex = 1;
+            this.txtLotnumber.Size = new System.Drawing.Size(514, 39);
+            this.txtLotnumber.TabIndex = 0;
             this.txtLotnumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLotnumber_KeyPress);
             // 
             // label1
@@ -62,21 +230,293 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Scan Sub Lot Number";
             // 
+            // txtTestProgram
+            // 
+            this.txtTestProgram.Enabled = false;
+            this.txtTestProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtTestProgram.Location = new System.Drawing.Point(285, 559);
+            this.txtTestProgram.Name = "txtTestProgram";
+            this.txtTestProgram.Size = new System.Drawing.Size(527, 39);
+            this.txtTestProgram.TabIndex = 0;
+            this.txtTestProgram.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTestProgram_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 569);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(237, 29);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Scan Test Program";
+            // 
+            // btnLaunch
+            // 
+            this.btnLaunch.BackColor = System.Drawing.Color.Gray;
+            this.btnLaunch.Enabled = false;
+            this.btnLaunch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLaunch.Location = new System.Drawing.Point(673, 643);
+            this.btnLaunch.Name = "btnLaunch";
+            this.btnLaunch.Size = new System.Drawing.Size(431, 73);
+            this.btnLaunch.TabIndex = 4;
+            this.btnLaunch.Text = "Launch Application";
+            this.btnLaunch.UseVisualStyleBackColor = false;
+            this.btnLaunch.Click += new System.EventHandler(this.btnLaunch_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(12, 511);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(253, 29);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Select Test Program";
+            // 
+            // cmbTestProg
+            // 
+            this.cmbTestProg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTestProg.Enabled = false;
+            this.cmbTestProg.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbTestProg.FormattingEnabled = true;
+            this.cmbTestProg.Location = new System.Drawing.Point(285, 500);
+            this.cmbTestProg.Name = "cmbTestProg";
+            this.cmbTestProg.Size = new System.Drawing.Size(527, 40);
+            this.cmbTestProg.TabIndex = 5;
+            this.cmbTestProg.SelectedIndexChanged += new System.EventHandler(this.cmbTestProg_SelectedIndexChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtCable);
+            this.groupBox2.Controls.Add(this.txtHIBs);
+            this.groupBox2.Controls.Add(this.txtLBoard);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.Location = new System.Drawing.Point(828, 77);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(922, 225);
+            this.groupBox2.TabIndex = 6;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Hardware Validation";
+            // 
+            // txtCable
+            // 
+            this.txtCable.Enabled = false;
+            this.txtCable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCable.Location = new System.Drawing.Point(208, 160);
+            this.txtCable.Name = "txtCable";
+            this.txtCable.Size = new System.Drawing.Size(687, 39);
+            this.txtCable.TabIndex = 8;
+            this.txtCable.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCable_KeyPress);
+            // 
+            // txtHIBs
+            // 
+            this.txtHIBs.Enabled = false;
+            this.txtHIBs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtHIBs.Location = new System.Drawing.Point(208, 103);
+            this.txtHIBs.Name = "txtHIBs";
+            this.txtHIBs.Size = new System.Drawing.Size(687, 39);
+            this.txtHIBs.TabIndex = 7;
+            this.txtHIBs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHIBs_KeyPress);
+            // 
+            // txtLBoard
+            // 
+            this.txtLBoard.Enabled = false;
+            this.txtLBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtLBoard.Location = new System.Drawing.Point(208, 50);
+            this.txtLBoard.Name = "txtLBoard";
+            this.txtLBoard.Size = new System.Drawing.Size(687, 39);
+            this.txtLBoard.TabIndex = 6;
+            this.txtLBoard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLBoard_KeyPress);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(26, 160);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 29);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Cable";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(26, 103);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(68, 29);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "HIBs";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(26, 46);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(148, 29);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Load Board";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.txtReelLot);
+            this.groupBox3.Controls.Add(this.txtCoverLot);
+            this.groupBox3.Controls.Add(this.txtCarrierLot);
+            this.groupBox3.Controls.Add(this.txtReelID);
+            this.groupBox3.Controls.Add(this.txtCoverID);
+            this.groupBox3.Controls.Add(this.txtCarrierID);
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.groupBox3.Location = new System.Drawing.Point(828, 324);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(922, 274);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Material Validation";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(700, 40);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(139, 29);
+            this.label17.TabIndex = 13;
+            this.label17.Text = "Material ID";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(292, 40);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(150, 29);
+            this.label16.TabIndex = 12;
+            this.label16.Text = "Material Lot";
+            // 
+            // txtReelLot
+            // 
+            this.txtReelLot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtReelLot.Location = new System.Drawing.Point(237, 211);
+            this.txtReelLot.Name = "txtReelLot";
+            this.txtReelLot.Size = new System.Drawing.Size(349, 39);
+            this.txtReelLot.TabIndex = 11;
+            this.txtReelLot.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReelLot_KeyPress);
+            // 
+            // txtCoverLot
+            // 
+            this.txtCoverLot.Enabled = false;
+            this.txtCoverLot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCoverLot.Location = new System.Drawing.Point(237, 150);
+            this.txtCoverLot.Name = "txtCoverLot";
+            this.txtCoverLot.Size = new System.Drawing.Size(349, 39);
+            this.txtCoverLot.TabIndex = 10;
+            this.txtCoverLot.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCoverLot_KeyPress);
+            // 
+            // txtCarrierLot
+            // 
+            this.txtCarrierLot.Enabled = false;
+            this.txtCarrierLot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCarrierLot.Location = new System.Drawing.Point(237, 95);
+            this.txtCarrierLot.Name = "txtCarrierLot";
+            this.txtCarrierLot.Size = new System.Drawing.Size(349, 39);
+            this.txtCarrierLot.TabIndex = 9;
+            this.txtCarrierLot.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCarrierLot_KeyPress);
+            // 
+            // txtReelID
+            // 
+            this.txtReelID.Enabled = false;
+            this.txtReelID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtReelID.Location = new System.Drawing.Point(626, 211);
+            this.txtReelID.Name = "txtReelID";
+            this.txtReelID.Size = new System.Drawing.Size(269, 39);
+            this.txtReelID.TabIndex = 8;
+            // 
+            // txtCoverID
+            // 
+            this.txtCoverID.Enabled = false;
+            this.txtCoverID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCoverID.Location = new System.Drawing.Point(626, 150);
+            this.txtCoverID.Name = "txtCoverID";
+            this.txtCoverID.Size = new System.Drawing.Size(269, 39);
+            this.txtCoverID.TabIndex = 7;
+            // 
+            // txtCarrierID
+            // 
+            this.txtCarrierID.Enabled = false;
+            this.txtCarrierID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtCarrierID.Location = new System.Drawing.Point(626, 95);
+            this.txtCarrierID.Name = "txtCarrierID";
+            this.txtCarrierID.Size = new System.Drawing.Size(269, 39);
+            this.txtCarrierID.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(26, 209);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 29);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Reel";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(26, 152);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(150, 29);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Cover Tape";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(26, 95);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(162, 29);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "Carrier Tape";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1654, 752);
+            this.ClientSize = new System.Drawing.Size(1762, 761);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.cmbTestProg);
+            this.Controls.Add(this.btnLaunch);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTestProgram);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLotnumber);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Main";
-            this.Text = "Main";
+            this.Text = "TPL";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,5 +527,41 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtLotnumber;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtTestProgram;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnLaunch;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtDetailLead;
+        private System.Windows.Forms.TextBox txtDetailPkg;
+        private System.Windows.Forms.TextBox txtDetailProduct;
+        private System.Windows.Forms.TextBox txtDetailDevice;
+        private System.Windows.Forms.TextBox txtDetailQty;
+        private System.Windows.Forms.TextBox txtDetailLotnumber;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbTestProg;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtCable;
+        private System.Windows.Forms.TextBox txtHIBs;
+        private System.Windows.Forms.TextBox txtLBoard;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtReelID;
+        private System.Windows.Forms.TextBox txtCoverID;
+        private System.Windows.Forms.TextBox txtCarrierID;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtReelLot;
+        private System.Windows.Forms.TextBox txtCoverLot;
+        private System.Windows.Forms.TextBox txtCarrierLot;
     }
 }
