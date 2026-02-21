@@ -30,8 +30,8 @@ namespace CentralTestTPL
         private void Login_Load(object sender, EventArgs e)
         {
             var appName = "CentralTestTPL";
-            int activeCount = Process.GetProcessesByName(appName).Length;
-            if (activeCount > 1)
+            int app1Count = Process.GetProcessesByName(appName).Length;
+            if (app1Count > 1)
             {
                 MessageBox.Show("TPL is already running.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 Application.Exit();
@@ -53,14 +53,22 @@ namespace CentralTestTPL
             {
                 var list = new DataAccess().selectMachine(txtMachine.Text);
 
-                if (!Directory.Exists(CentralTest.EngDatalogPath))
-                {
-                    ShowError("Correlation/Binning Folder Not Exist.\nPlease Contact Engineer.");
-                    txtMachine.Clear();
-                    return;
-                } else if (list.Count > 0) {
-                    if (!Directory.Exists(CentralTest.EngDatalogPath+"\\Archived")) {
-                        Directory.CreateDirectory(CentralTest.EngDatalogPath + "\\Archived");
+                if (list.Count > 0) {
+                    int app2Count = Process.GetProcessesByName(CentralTest.Application2).Length;
+                    if (app2Count >= 1)
+                    {
+                        foreach (var proc in Process.GetProcessesByName(CentralTest.Application2))
+                        {
+                            try
+                            {
+                                proc.Kill();
+                                proc.WaitForExit();
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show($"Failed to close process: {ex.Message}");
+                            }
+                        }
                     }
                     txtMachine.Enabled = false;
                     txtHandler.Enabled = true;

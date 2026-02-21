@@ -68,6 +68,7 @@ namespace CentralTestTPL
         public static Int64 SubLotQty { get; set; }
         public static Int64 RecipeCode { get; set; }
         public static string StageID { get; set; }
+        public static string TestProgramFolder { get; set; }
         public static string FinalTestProgram { get; set; }
         public static string QATestProgram { get; set; }
         public static string LBoard { get; set; }
@@ -76,6 +77,7 @@ namespace CentralTestTPL
         public static string CoverTape { get; set; }
         public static string CarrierTape { get; set; }
         public static string Reel { get; set; }
+        public static string FTPpath { get; set; }
         public static string msg { get; set; }
     }
 
@@ -130,6 +132,7 @@ namespace CentralTestTPL
         public static string Username { get; set; }
         public static string Password { get; set; }
         public static string Handler { get; set; }
+        public static string Application2 { get; set; }
         public static string EngDatalogPath { get; set; }
     }
 
