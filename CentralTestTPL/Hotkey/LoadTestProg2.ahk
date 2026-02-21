@@ -25,7 +25,7 @@ else
     WinActivate, Select program file to insert.
     WinWaitActive, Select program file to insert.
     Sleep, 500
-    inputFile := "C:\TPL\AutoFillDetails.txt"
+    inputFile := "C:\ITfolder\TPL\AutoFillDetails.txt"
     FileRead, fileContent, %inputFile%
     fileContent := StrReplace(fileContent, "`r", "")
     StringSplit, param, fileContent,`n
@@ -34,7 +34,7 @@ else
     Sleep, 500
     Send, {Enter}
     Sleep, 500
-    Send, %param1%
+    Send, %param2%
     Sleep, 500
     Send, {Enter}
     Sleep, 500
@@ -42,7 +42,7 @@ else
     Sleep, 500
     Send, {Enter}
     Sleep, 500
-    Send, %param2%
+    Send, %param3%
     Sleep, 500
     Send, {Enter}
     Sleep, 500
@@ -52,5 +52,6 @@ else
     ControlFocus, Button1, Program Selection
     Sleep, 500
     Send, {Space}
-    Sleep, 500
+    Sleep, 1000
+    Run, "C:\ITfolder\TPL\Autofill1.exe"
 }
