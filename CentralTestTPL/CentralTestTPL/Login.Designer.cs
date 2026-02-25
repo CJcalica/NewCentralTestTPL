@@ -42,6 +42,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtUsername.Enabled = false;
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -55,6 +56,7 @@
             // 
             // txtMachine
             // 
+            this.txtMachine.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtMachine.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtMachine.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMachine.Location = new System.Drawing.Point(347, 387);
@@ -116,6 +118,7 @@
             // 
             // txtHandler
             // 
+            this.txtHandler.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtHandler.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtHandler.Enabled = false;
             this.txtHandler.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(812, 580);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

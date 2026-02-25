@@ -78,6 +78,7 @@ namespace CentralTestTPL
         public static string CarrierTape { get; set; }
         public static string Reel { get; set; }
         public static string FTPpath { get; set; }
+        public static string LotNaming { get; set; }
         public static string msg { get; set; }
     }
 
@@ -134,6 +135,12 @@ namespace CentralTestTPL
         public static string Handler { get; set; }
         public static string Application2 { get; set; }
         public static string EngDatalogPath { get; set; }
+    }
+
+    public class AXMaterial
+    {
+        public static string SIDNo { get; set; }
+        public static string ErrorMsg { get; set; }
     }
 
 }

@@ -116,6 +116,29 @@ namespace CentralTestTPL
             return pathInfo;
         }
 
+        public List<AXMaterial> AXCheckMaterial (string matLot, string matSID)
+        {
+            Sqlhandler.SetToEMMS1();
+            List<AXMaterial> AXInfo = new List<AXMaterial>();
+
+            SqlDataReader dr = null;
+            Sqlhandler.CreateParameter(2);
+            Sqlhandler.SetParameterValues(0, "@MatLot", SqlDbType.NVarChar, matLot);
+            Sqlhandler.SetParameterValues(1, "@SID", SqlDbType.NVarChar, matSID);
+
+            DataTable dt = new DataTable();
+
+            if (Sqlhandler.OpenConnection())
+            {
+                if (Sqlhandler.FillDataTable("usp_CentralTest_TPL_Check_Material_Lot", ref dt, CommandType.StoredProcedure))
+                {
+
+                }
+                AXInfo = ConvertDataTable<AXMaterial>(dt);
+            }
+            Sqlhandler.CloseConnection();
+            return AXInfo;
+        }
 
         public bool selectToLogs(string fname)
         {
